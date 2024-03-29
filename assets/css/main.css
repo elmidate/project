@@ -36,13 +36,13 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
-.section-header {
+/*.section-header {
   border-bottom: 2px solid var(--color-black);
-}
+}*/
 
 .section-header h2 {
   font-size: 50px;
