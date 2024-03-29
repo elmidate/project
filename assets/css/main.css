@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: var(--color-links);
+  color: white;
   text-decoration: none;
 }
 
