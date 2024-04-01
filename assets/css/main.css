@@ -626,6 +626,11 @@ section {
   margin-right: 20px; 
 }
 
+.deskripsi {
+  float: left;
+  width: calc(100% - 200px); /* Menyesuaikan dengan lebar gambar dan margin */
+}
+
 .post-entry-2 .pe-md-5 {
   overflow: hidden;
 }
