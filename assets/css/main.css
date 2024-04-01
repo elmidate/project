@@ -615,31 +615,28 @@ section {
   }
 }
 
+.post-entry-2.half .thumbnail {
+  flex: 0 0 50%;
+  margin-bottom: 20px;
 
-
-/* Mengatur wrapper menjadi flex */
-.thumbnail-wrapper {
-  display: flex;
 }
 
-/* Mengatur teks deskripsi agar tetap di sisi kiri */
-.thumbnail-wrapper .deskripsi {
-  flex: 1; /* Biarkan teks mengisi sisa ruang yang tersedia */
-}
-
-/* Floating gambar 3 */
+/* Mengatur lebar gambar dan margin */
 .img-3 {
-  float: right;
-  margin-left: 20px; /* Sesuaikan dengan jarak yang diinginkan */
+  float: left;
+  width: 50%; /* Sesuaikan lebar gambar dengan preferensi Anda */
+  margin-left: 20px; /* Sesuaikan margin dengan preferensi Anda */
 }
 
-/* Membersihkan floating */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+/* Memberikan gaya pada teks deskripsi */
+.deskripsi {
+  overflow: hidden; /* Mengatasi teks deskripsi yang mungkin meluas ke bawah gambar */
+  
 }
 
+.post-entry-2 .pe-md-5 {
+  overflow: hidden;
+}
 
 
 
