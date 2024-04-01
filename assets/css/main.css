@@ -53,6 +53,8 @@ section {
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
@@ -555,30 +557,6 @@ section {
   color: rgba(var(--color-black-rgb), 1);
 }
 
-.with-border {
-  border: 100px;
-  border-radius: 30px; /* Membuat border dengan sudut bulat */
-}
-
- .border-heading-text {
-  border: 100px;
-  border-radius: 30px; /* Atur ketebalan dan jenis border */
-  padding: 20px 20px; /* Jarak antara teks dan border */
-  margin: 10px; /* Jarak antara border dan elemen sekitarnya */
-  color: #fff;
-  
-  /* Gradient linear sebagai latar belakang border */
-  background: linear-gradient(to right, #57381F 30%, #D99566); /* Warna gradient dari #57381F ke #FFFFFF */
-  -webkit-background-clip: border-box; /* Gunakan background untuk border-box */
-  background-clip: border-box; /* Gunakan background untuk border-box */
-}
-
-.img-2{ /*gambar wayang 2*/
-  width: 500px;
-  height: 140px;
-
-}
-
 .trending .trending-post li:last-child a {
   border-bottom: none;
 }
@@ -586,6 +564,30 @@ section {
 .post-entry-2 {
   margin-bottom: 30px;
 }
+.with-border {
+    border: 100px;
+    border-radius: 30px; /* Membuat border dengan sudut bulat */
+}
+
+   .border-heading-text {
+    border: 100px;
+    border-radius: 30px; /* Atur ketebalan dan jenis border */
+    padding: 20px 20px; /* Jarak antara teks dan border */
+    margin: 10px; /* Jarak antara border dan elemen sekitarnya */
+    color: #fff;
+    
+    /* Gradient linear sebagai latar belakang border */
+    background: linear-gradient(to right, #57381F 30%, #D99566); /* Warna gradient dari #57381F ke #FFFFFF */
+    -webkit-background-clip: border-box; /* Gunakan background untuk border-box */
+    background-clip: border-box; /* Gunakan background untuk border-box */
+}
+
+  .img-2{
+    width: 500px;
+    height: 140px;
+
+  }
+
 
 .post-entry-2 .post-meta {
   font-size: 11px;
@@ -606,6 +608,12 @@ section {
 
 .post-entry-2 .thumbnail {
   flex: 0 0 65%;
+  
+}
+
+.img-3{
+  width: auto;
+  height: auto;
 }
 
 @media (max-width: 960px) {
@@ -617,20 +625,7 @@ section {
 
 .post-entry-2.half .thumbnail {
   flex: 0 0 50%;
-  margin-bottom: 20px;
-
 }
-
-.img-3 {/*gambar 3 */
-  width: 20%;
-  height: auto;
-  
-}
-
-.Deskripsi-paragraf {
-  padding: 1px;
-}
-
 
 @media (max-width: 768px) {
   .post-entry-2.half .thumbnail {
