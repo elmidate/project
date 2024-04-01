@@ -615,25 +615,29 @@ section {
   }
 }
 
-.post-entry-2.half .thumbnail {
-  flex: 0 0 50%;
+/* Mengatur konten menjadi flex dan mengatur tata letak flex */
+.post-entry-2.half {
+  display: flex;
+}
+
+/* Mengatur gambar agar tetap di sisi kiri */
+.thumbnail {
+  flex: 0 0 auto; /* Jangan biarkan gambar meregang */
+}
+
+/* Mengatur teks deskripsi agar berada di sisi kanan */
+.post-entry-2-pe-md-5 {
+  flex: 1; /* Biarkan teks mengisi sisa ruang yang tersedia */
+}
+
+/* Mengatur gambar wayang 3 */
+.img-3 {
+  width: 100%; /* Pastikan gambar memenuhi lebar div */
   margin-bottom: 20px;
-
 }
 
-.img-3{
-  float: left;
-  margin-right: 20px; 
-}
 
-.deskripsi {
-  float: left;
-  width: calc(100% - 200px); /* Menyesuaikan dengan lebar gambar dan margin */
-}
 
-.post-entry-2 .pe-md-5 {
-  overflow: hidden;
-}
 
 @media (max-width: 768px) {
   .post-entry-2.half .thumbnail {
