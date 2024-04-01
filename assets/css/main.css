@@ -617,6 +617,17 @@ section {
 
 .post-entry-2.half .thumbnail {
   flex: 0 0 50%;
+  margin-bottom: 20px;
+
+}
+
+.img-3{
+  float: left;
+  margin-right: 20px; 
+}
+
+.post-entry-2 .pe-md-5 {
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
