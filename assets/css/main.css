@@ -1219,7 +1219,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   overflow: hidden;
-  background: #765235;
+  background: rgba(var(--color-black-rgb), 0.9);
   font-size: 16px;
   color: rgba(var(--color-white-rgb), 0.7);
 }
@@ -1289,7 +1289,7 @@ section {
 }
 
 .footer .footer-legal {
-  background: var(--color-black);
+  background: #765235;;
   padding: 40px 0;
 }
 
