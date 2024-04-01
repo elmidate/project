@@ -573,7 +573,7 @@ section {
   background-clip: border-box; /* Gunakan background untuk border-box */
 }
 
-.img-2{ /*gambar wayang 2*/
+.img-2{
   width: 500px;
   height: 140px;
 
@@ -619,15 +619,6 @@ section {
   flex: 0 0 50%;
   margin-bottom: 20px;
 
-}
-
-.img-3 {
-  width: 100%;
-  height: auto;
-}
-
-.Deskripsi-wayang-kulit {
-  padding: 20px;
 }
 
 
