@@ -621,23 +621,14 @@ section {
 
 }
 
-/* Mengatur lebar gambar dan margin */
 .img-3 {
-  float: left;
-  width: 50%; /* Sesuaikan lebar gambar dengan preferensi Anda */
-  margin-left: 20px; /* Sesuaikan margin dengan preferensi Anda */
+  width: 100%;
+  height: auto;
 }
 
-/* Memberikan gaya pada teks deskripsi */
-.deskripsi {
-  overflow: hidden; /* Mengatasi teks deskripsi yang mungkin meluas ke bawah gambar */
-  
+.Deskripsi-wayang-kulit {
+  padding: 20px;
 }
-
-.post-entry-2 .pe-md-5 {
-  overflow: hidden;
-}
-
 
 
 @media (max-width: 768px) {
