@@ -7,15 +7,17 @@
 */
 
 document.addEventListener('DOMContentLoaded', () => {
-  "use strict";
+  ("use strict");
 
   /**
    * Sticky header on scroll
    */
-  const selectHeader = document.querySelector('#header');
+  const selectHeader = document.querySelector("#header");
   if (selectHeader) {
-    document.addEventListener('scroll', () => {
-      window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+    document.addEventListener("scroll", () => {
+      window.scrollY > 100
+        ? selectHeader.classList.add("sticked")
+        : selectHeader.classList.remove("sticked");
     });
   }
 
@@ -23,33 +25,32 @@ document.addEventListener('DOMContentLoaded', () => {
    * Mobile nav toggle
    */
 
-  const mobileNavToogleButton = document.querySelector('.mobile-nav-toggle');
+  const mobileNavToogleButton = document.querySelector(".mobile-nav-toggle");
 
   if (mobileNavToogleButton) {
-    mobileNavToogleButton.addEventListener('click', function(event) {
+    mobileNavToogleButton.addEventListener("click", function (event) {
       event.preventDefault();
       mobileNavToogle();
     });
   }
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToogleButton.classList.toggle('bi-list');
-    mobileNavToogleButton.classList.toggle('bi-x');
+    document.querySelector("body").classList.toggle("mobile-nav-active");
+    mobileNavToogleButton.classList.toggle("bi-list");
+    mobileNavToogleButton.classList.toggle("bi-x");
   }
 
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navbar a').forEach(navbarlink => {
-
+  document.querySelectorAll("#navbar a").forEach((navbarlink) => {
     if (!navbarlink.hash) return;
 
     let section = document.querySelector(navbarlink.hash);
     if (!section) return;
 
-    navbarlink.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
+    navbarlink.addEventListener("click", () => {
+      if (document.querySelector(".mobile-nav-active")) {
         mobileNavToogle();
       }
     });
@@ -58,36 +59,41 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Toggle mobile nav dropdowns
    */
-  const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+  const navDropdowns = document.querySelectorAll(".navbar .dropdown > a");
 
-  navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
-      if (document.querySelector('.mobile-nav-active')) {
+  navDropdowns.forEach((el) => {
+    el.addEventListener("click", function (event) {
+      if (document.querySelector(".mobile-nav-active")) {
         event.preventDefault();
-        this.classList.toggle('active');
-        this.nextElementSibling.classList.toggle('dropdown-active');
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("dropdown-active");
 
-        let dropDownIndicator = this.querySelector('.dropdown-indicator');
-        dropDownIndicator.classList.toggle('bi-chevron-up');
-        dropDownIndicator.classList.toggle('bi-chevron-down');
+        let dropDownIndicator = this.querySelector(".dropdown-indicator");
+        dropDownIndicator.classList.toggle("bi-chevron-up");
+        dropDownIndicator.classList.toggle("bi-chevron-down");
       }
-    })
+    });
   });
 
   /**
    * Scroll top button
    */
-  const scrollTop = document.querySelector('.scroll-top');
+  const scrollTop = document.querySelector(".scroll-top");
   if (scrollTop) {
-    const togglescrollTop = function() {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
-    window.addEventListener('load', togglescrollTop);
-    document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+    const togglescrollTop = function () {
+      window.scrollY > 100
+        ? scrollTop.classList.add("active")
+        : scrollTop.classList.remove("active");
+    };
+    window.addEventListener("load", togglescrollTop);
+    document.addEventListener("scroll", togglescrollTop);
+    scrollTop.addEventListener(
+      "click",
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    );
   }
 
   /**
@@ -116,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Open and close the search form.
    */
-  const searchOpen = document.querySelector('.js-search-open');
-  const searchClose = document.querySelector('.js-search-close');
+  const searchOpen = document.querySelector(".js-search-open");
+  const searchClose = document.querySelector(".js-search-close");
   const searchWrap = document.querySelector(".js-search-form-wrap");
 
   searchOpen.addEventListener("click", (e) => {
@@ -134,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: ".glightbox",
   });
 
   /**
@@ -143,13 +149,36 @@ document.addEventListener('DOMContentLoaded', () => {
   function aos_init() {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
-      mirror: false
+      mirror: false,
     });
   }
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     aos_init();
   });
 
+  const themeToggle = document.getElementById("theme-toggle");
+  let darkMode = false;
+
+  themeToggle.addEventListener("click", () => {
+    darkMode = !darkMode;
+    updateButton();
+  });
+
+  function updateButton() {
+    if (darkMode) {
+      themeToggle.style.backgroundColor = "#000000"; // Warna hitam saat dalam mode gelap
+      themeToggle.style.color = "#ffffff"; // Warna putih untuk teks tombol saat dalam mode gelap
+      themeToggle.style.borderRadius = "0%"; // Membuat sudut tombol menjadi persegi
+    } else {
+      themeToggle.style.backgroundColor = "#ffffff"; // Warna putih saat dalam mode terang
+      themeToggle.style.color = "#000000"; // Warna hitam untuk teks tombol saat dalam mode terang
+      themeToggle.style.borderRadius = "50%"; // Membuat sudut tombol menjadi lingkaran
+    }
+  }
+
+
 });
+
+
