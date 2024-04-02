@@ -582,8 +582,8 @@ section {
     background-clip: border-box; /* Gunakan background untuk border-box */
 }
   .bi-bi-arrow-right-circle-fill{
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
     
   }
   .img-2{
