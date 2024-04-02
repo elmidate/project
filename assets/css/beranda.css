@@ -123,6 +123,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   background: #765235;
+  box-shadow: black 5px 5px 5px ; /* Menambahkan bayangan di bawah footer */
 }
 
 .header.sticked {
@@ -1114,6 +1115,7 @@ section {
   background: rgba(var(--color-black-rgb), 0.9);
   font-size: 16px;
   color: rgba(var(--color-white-rgb), 0.7);
+  box-shadow: black 10px 10px 10px 10px; /* Menambahkan bayangan di bawah footer */
 }
 
 .footer .footer-content {
@@ -1181,7 +1183,7 @@ section {
 }
 
 .footer .footer-legal {
-  background: #765235;;
+  background: #765235;
   padding: 40px 0;
 }
 
@@ -1214,51 +1216,80 @@ section {
 }
 
 /* Tombol tema */
-/* Tombol tema */
+
+
+
 input[type="checkbox"]#darkmode-toggle {
   display: none; /* Sembunyikan checkbox */
 }
 
 label[for="darkmode-toggle"] {
-  width: 120px;
-  height: 50px;
-  position: relative;
+  width: 60px;
+  height: 30px;
+  position: relative ;
   display: block;
   background: #ebebeb;
-  border-radius: 25px;
-  box-shadow: inset 0px 3px 8px rgba(0,0,0,0.4), inset 0px -3px 8px rgba(255,255,255,0.4);
+  border-radius: 15px;
   cursor: pointer;
 }
 
 label[for="darkmode-toggle"]:after {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  background: linear-gradient(180deg, #ffcc89, #d8860b);
-  border-radius: 20px;
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-  transition: left 0.3s ease;
+  top: 0;
+  left: 0;
+  background:  #BE6D2C;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+#darkmode-toggle:checked + label[for="darkmode-toggle"] {
+  background: #333; /* Background color in dark mode */
 }
 
 #darkmode-toggle:checked + label[for="darkmode-toggle"]:after {
-  left: 75px; /* Adjust the position of the after element when checkbox is checked */
-  background: linear-gradient(180deg, #777, #3a3a3a);
+  transform: translateX(30px); /* Move the circle to the right in dark mode */
 }
 
-/* Background color transition */
+/* Transisi warna latar belakang */
 .background {
   width: 100vw;
   height: 100vh;
-  background: #fff; /* Default background color */
+  background: #fff; /* Warna latar belakang default */
   z-index: -1;
   position: absolute;
   transition: background 0.3s;
 }
 
-#darkmode-toggle:checked + label[for="darkmode-toggle"] + .background {
-  background: #242424; /* Background color when checkbox is checked */
+.dark-mode {
+  background-image: linear-gradient(to bottom, #BE6D2C ,  #765235); /* Gradient linear dari #765235 ke #000000 saat mode gelap diaktifkan */
 }
+
+/* Atur warna teks pada kelas .page-title saat mode gelap diaktifkan */
+.dark-mode .page-title {
+  color: #ffffff; /* Warna teks putih saat mode gelap diaktifkan */
+  -webkit-text-stroke-width: 1px; /* Lebar garis tepi */
+  -webkit-text-stroke-color: #000000; /* Warna garis tepi */
+}
+
+/* Atur gaya tambahan untuk elemen h2 dengan kelas mb-4 dan display-4 saat mode gelap diaktifkan */
+.dark-mode h2.mb-4.display-4 {
+  color: #ffffff; /* Warna teks putih saat mode gelap diaktifkan */
+  -webkit-text-stroke-width: 1px; /* Lebar garis tepi */
+  -webkit-text-stroke-color: #000000; /* Warna garis tepi */
+}
+
+/* Atur gaya tambahan untuk elemen h2 dengan kelas mb-4 dan display-4 saat mode gelap diaktifkan */
+.dark-mode p.mb-5.display-10 {
+  color: #ffffff; /* Warna teks putih saat mode gelap diaktifkan */
+}
+
+
+.dark-mode .deskripsi-paragraf {
+  color: #ffffff; /* Atur warna teks saat mode gelap diaktifkan */
+}
+
 

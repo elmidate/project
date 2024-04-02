@@ -158,25 +158,23 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
-  const themeToggle = document.getElementById("theme-toggle");
-  let darkMode = false;
 
-  themeToggle.addEventListener("click", () => {
-    darkMode = !darkMode;
-    updateButton();
-  });
 
-  function updateButton() {
-    if (darkMode) {
-      themeToggle.style.backgroundColor = "#000000"; // Warna hitam saat dalam mode gelap
-      themeToggle.style.color = "#ffffff"; // Warna putih untuk teks tombol saat dalam mode gelap
-      themeToggle.style.borderRadius = "0%"; // Membuat sudut tombol menjadi persegi
-    } else {
-      themeToggle.style.backgroundColor = "#ffffff"; // Warna putih saat dalam mode terang
-      themeToggle.style.color = "#000000"; // Warna hitam untuk teks tombol saat dalam mode terang
-      themeToggle.style.borderRadius = "50%"; // Membuat sudut tombol menjadi lingkaran
-    }
+const darkModeToggle = document.getElementById("darkmode-toggle");
+const body = document.body;
+
+darkModeToggle.addEventListener("change", function () {
+  if (this.checked) {
+    // Aktifkan mode gelap
+    body.classList.add("dark-mode"); // Tambahkan kelas CSS untuk mode gelap
+  } else {
+    // Nonaktifkan mode gelap
+    body.classList.remove("dark-mode"); // Hapus kelas CSS untuk mode gelap
   }
+});
+
+
+
 
 
 });
