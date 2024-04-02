@@ -581,7 +581,10 @@ section {
     -webkit-background-clip: border-box; /* Gunakan background untuk border-box */
     background-clip: border-box; /* Gunakan background untuk border-box */
 }
-
+  .bi-bi-arrow-right-circle-fill{
+    width: auto;
+    height: auto;
+  }
   .img-2{
     width: 500px;
     height: 140px;
