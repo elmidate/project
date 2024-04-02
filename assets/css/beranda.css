@@ -1261,3 +1261,4 @@ label[for="darkmode-toggle"]:after {
 #darkmode-toggle:checked + label[for="darkmode-toggle"] + .background {
   background: #242424; /* Background color when checkbox is checked */
 }
+
