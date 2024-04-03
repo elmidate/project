@@ -1087,6 +1087,87 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Galeri
+--------------------------------------------------------------*/
+.atas {
+  float: left;
+  width: 500px;
+  height: 300px;
+}
+
+.row {
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  justify-content: end;
+}
+
+.column {
+  /* height: 200px; */
+}
+
+.yellow {
+  width: 259px;
+  height: 194px;
+  margin-bottom: 11px;
+  /* float: right; */
+}
+
+.orange {
+  width: 259px;
+  height: 194px;
+}
+
+.green {
+  width: 259px;
+  height: 194px;
+  /* float: right; */
+}
+
+.blue {
+  width: 259px;
+  height: 194px;
+  /* float: right; */
+}
+
+.dua .atas {
+  float: right;
+  margin-right: 70px;
+  width: 500px;
+  height: 300px;
+}
+
+.dua .row {
+  /* margin-left: 20px; */
+  /* margin-right: 30px; */
+  justify-content: start;
+}
+
+.dua .yellow {
+  width: 259px;
+  height: 194px;
+  margin-bottom: 11px;
+  /* float: left; */
+}
+
+.dua .orange {
+  width: 259px;
+  height: 194px;
+}
+
+.dua .green {
+  width: 259px;
+  height: 194px;
+  /* float: right; */
+}
+
+.dua .blue {
+  width: 259px;
+  height: 194px;
+  /* float: right; */
+}
+
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info-item {
