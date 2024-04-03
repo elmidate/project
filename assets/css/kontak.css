@@ -1,17 +1,6 @@
-/**
-* Template Name: ZenBlog
-* Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https:///bootstrapmade.com/license/
-*/
 
-/**
-* Check out variables.css for easy customization of colors, typography, and other repetitive properties
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
+
 :root {
   scroll-behavior: smooth;
 }
@@ -21,7 +10,7 @@ body {
 }
 
 a {
-  color: var(--color-links);
+  color: white;
   text-decoration: none;
 }
 
@@ -47,13 +36,13 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
-.section-header {
+/*.section-header {
   border-bottom: 2px solid var(--color-black);
-}
+}*/
 
 .section-header h2 {
   font-size: 50px;
@@ -63,6 +52,8 @@ section {
 .section-header p {
   margin-bottom: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -131,7 +122,7 @@ section {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
-  background: #f2f2f2;
+  background: #765235;
 }
 
 .header.sticked {
@@ -146,7 +137,7 @@ section {
 .header .logo h1 {
   font-size: 30px;
   font-weight: 700;
-  color: var(--color-default);
+  color: #fff;
   font-family: var(--font-primary);
 }
 
@@ -219,6 +210,7 @@ section {
     padding: 0;
   }
 
+
   .navbar ul {
     margin: 0;
     padding: 0;
@@ -240,7 +232,7 @@ section {
     font-family: var(--font-default);
     font-size: 16px;
     font-weight: 500;
-    color: rgba(var(--color-default-rgb), 1);
+    color: white;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -572,6 +564,34 @@ section {
 .post-entry-2 {
   margin-bottom: 30px;
 }
+.with-border {
+    border: 100px;
+    border-radius: 30px; /* Membuat border dengan sudut bulat */
+}
+
+   .border-heading-text {
+    border: 100px;
+    border-radius: 30px; /* Atur ketebalan dan jenis border */
+    padding: 20px 20px; /* Jarak antara teks dan border */
+    margin: 10px; /* Jarak antara border dan elemen sekitarnya */
+    color: #fff;
+    
+    /* Gradient linear sebagai latar belakang border */
+    background: linear-gradient(to right, #57381F 30%, #D99566); /* Warna gradient dari #57381F ke #FFFFFF */
+    -webkit-background-clip: border-box; /* Gunakan background untuk border-box */
+    background-clip: border-box; /* Gunakan background untuk border-box */
+}
+  .bi-bi-arrow-right-circle-fill{
+    width: 100px;
+    height: 100px;
+    
+  }
+  .img-2{
+    width: 500px;
+    height: 140px;
+
+  }
+
 
 .post-entry-2 .post-meta {
   font-size: 11px;
@@ -592,6 +612,12 @@ section {
 
 .post-entry-2 .thumbnail {
   flex: 0 0 65%;
+  
+}
+
+.img-3{
+  width: auto;
+  height: auto;
 }
 
 @media (max-width: 960px) {
@@ -1267,7 +1293,7 @@ section {
 }
 
 .footer .footer-legal {
-  background: var(--color-black);
+  background: #765235;;
   padding: 40px 0;
 }
 
