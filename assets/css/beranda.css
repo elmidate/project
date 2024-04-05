@@ -53,8 +53,8 @@ section {
   margin-bottom: 0;
 }
 
-    .background-section {
-      background-image: url('assets/img/beranda.png');
+    .background-img {
+      background-image: url('assets/img/wayang/wayang 1.png');
       background-size: cover;
       background-position: center;
       /* Sesuaikan properti background sesuai kebutuhan */
