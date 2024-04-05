@@ -53,13 +53,13 @@ section {
   margin-bottom: 0;
 }
 
-    .background-img {
-      background-image: url('assets/img/wayang/wayang 1.png');
-      background-size: cover;
-      background-position: center;
-      /* Sesuaikan properti background sesuai kebutuhan */
-      padding: 100px 0; /* Contoh padding untuk memberi jarak dari atas dan bawah */
-    }
+.background-section {
+        background-image: url('assets/img/wayang/beranda.png');
+        background-size: cover;
+        background-position: center;
+        /* Sesuaikan properti background sesuai kebutuhan */
+        padding: 100px 0; /* Contoh padding untuk memberi jarak dari atas dan bawah */
+}
 
 
 /*--------------------------------------------------------------
