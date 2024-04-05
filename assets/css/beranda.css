@@ -349,7 +349,7 @@ section {
     text-decoration: none; /* Menghapus dekorasi teks */
     display: inline-block; /* Agar tombol tidak menempati ruang yang lebar */
     font-size: 16px; /* Ukuran teks */
-    margin: 10px; /* Menambahkan jarak di sekitar tombol */
+    margin: -100px; /* Menambahkan jarak di sekitar tombol */
     cursor: pointer; /* Mengubah kursor saat dihover ke pointer */
     transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
 }
