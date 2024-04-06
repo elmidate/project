@@ -4,17 +4,14 @@
 :root {
   scroll-behavior: smooth;
 }
-
 body {
-margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #BE6D2C; /* Warna awal latar belakang body */
-  background-image: linear-gradient(to bottom,  #BE6D2C, #583214); /* Gradien linear dari atas ke bawah dari #BE6D2C ke #583214 */
-}
-
-
-
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #BE6D2C; /* Warna awal latar belakang body */
+      background-image: linear-gradient(to bottom,  #BE6D2C, #583214); /* Gradien linear dari atas ke bawah dari #BE6D2C ke #583214 */
+      position: relative; /* Menjadikan posisi relatif agar overlay dapat ditambahkan */
+    }
 a {
   color: white;
   text-decoration: none;
