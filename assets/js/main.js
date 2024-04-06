@@ -159,24 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-const darkModeToggle = document.getElementById("darkmode-toggle");
-const body = document.body;
-
-darkModeToggle.addEventListener("change", function () {
-  if (this.checked) {
-    // Aktifkan mode gelap
-    body.classList.add("dark-mode"); // Tambahkan kelas CSS untuk mode gelap
-  } else {
-    // Nonaktifkan mode gelap
-    body.classList.remove("dark-mode"); // Hapus kelas CSS untuk mode gelap
-  }
-});
-
-
-
-
-
 });
 
 
