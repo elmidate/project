@@ -536,7 +536,7 @@ section {
   margin: 5px 0 30px 0;
   font-size: 24px;
   font-weight: 400;
-  text-shadow: 0px 0px 5px #925A2C; /* Efek shadow dengan warna yang cukup kontras */
+  text-shadow: 0px 0px 10px #925A2C; /* Efek shadow dengan warna yang cukup kontras */
 }
 
 
