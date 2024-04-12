@@ -295,15 +295,16 @@ section {
     border-radius: 30px; /* Menentukan radius sudut */
     background-color: #57381F; /* Warna latar belakang */
     color: #FFF; /* Warna teks */
-    padding: 10px 20px; /* Padding di dalam tombol */
+    padding: 8px 16px; /* Padding di dalam tombol */
     text-align: center; /* Posisi teks ke tengah */
     text-decoration: none; /* Menghapus dekorasi teks */
     display: inline-block; /* Agar tombol tidak menempati ruang yang lebar */
-    font-size: 16px; /* Ukuran teks */
+    font-size: 14px; /* Ukuran teks yang dikurangi */
     margin: -100px; /* Menambahkan jarak di sekitar tombol */
     cursor: pointer; /* Mengubah kursor saat dihover ke pointer */
     transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
 }
+
 
 /* Efek hover */
 .button-nav:hover {
