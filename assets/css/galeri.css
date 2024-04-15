@@ -443,6 +443,35 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Button sign 
+--------------------------------------------------------------*/
+
+.button-nav {
+    border: 2px solid #57381F; /* Menambahkan border solid dengan warna yang ditentukan */
+    border-radius: 30px; /* Menentukan radius sudut */
+    background-color: #57381F; /* Warna latar belakang */
+    color: #FFF; /* Warna teks */
+    padding: 8px 16px; /* Padding di dalam tombol */
+    text-align: center; /* Posisi teks ke tengah */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: inline-block; /* Agar tombol tidak menempati ruang yang lebar */
+    font-size: 14px; /* Ukuran teks yang dikurangi */
+    margin: -100px; /* Menambahkan jarak di sekitar tombol */
+    cursor: pointer; /* Mengubah kursor saat dihover ke pointer */
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
+     font-family: var(--font-primary);
+}
+
+
+/* Efek hover */
+.button-nav:hover {
+    background-color: #000; /* Ubah warna latar belakang saat tombol dihover */
+    color: #FFF; /* Ubah warna teks saat tombol dihover */
+    font-family: var(--font-primary);
+}
+
+
+/*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
 .post-entry-1 {
