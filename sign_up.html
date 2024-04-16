@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Wayang Kulit - Sign In</title>
+  <title>Wayang Kulit - Sign Up</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -32,30 +32,37 @@
 
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
-  <link href="assets/css/sign_in.css" rel="stylesheet">
+  <link href="assets/css/sign_up.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="shadow-puppet-background">
-            <!-- Background Image -->
-            <img src="assets/img/wayang/wayang5.png" alt="background-img">
-        </div>
-        <div class="sign-in">
-            <h1>SIGN IN</h1>
-            <form action="#">
-                <div class="input-icon">
-                    <input type="text" id="username" name="username" placeholder="Enter Your Username">
-                    <input type="password" id="password" name="password" placeholder="Enter Your  Password">
-                </div>
-                <button type="submit">Login</button>
-                <a class="a-sign-in" href="sign_up.html">Sign Up</a>
-            </form>
-        </div>
+<div class="container">
+    <div class="shadow-puppet-background">
+        <!-- Gambar latar belakang -->
+        <img src="assets/img/wayang/wayang5.png" alt="background-img">
     </div>
+    <div class="sign-up">
+        <h1>SIGN UP</h1>
+              <form action="#">
+                  <div class="input-icon">
+                      <input type="text" id="username" name="username" placeholder="Enter Your Username">
+                      <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                       <input type="password" id="password" name="password" placeholder="Enter Your  Password">
+                       <input type="verification_password" id="verification_password" name="password" placeholder="Enter Your Verification Password">
+                  </div>
+                 <div class="button-container">
+                        <button class="button1" type="reset">Reset</button>
+                        <button class="button2" type="submit">Register</button>
+                 </div>
+
+                  <a  href="sign_in.html">Sign In</a>
+              </form>
+
+    </div>
+</div>
+
 
  
 
