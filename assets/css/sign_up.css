@@ -132,6 +132,15 @@ body {
     font-family: "Oranienbaum", serif;
 }
 
+.a-sign-back {
+    position: relative;
+    bottom: -20px;
+    left:  140px;
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Oranienbaum", serif;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
