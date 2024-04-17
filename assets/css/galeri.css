@@ -1118,83 +1118,15 @@ section {
 /*--------------------------------------------------------------
 # Galeri
 --------------------------------------------------------------*/
-.atas {
-  float: left;
-  width: 500px;
-  height: 300px;
-}
-
-.row {
-  /* margin-left: 20px; */
-  /* margin-right: 20px; */
-  justify-content: end;
-}
-
-.column {
-  /* height: 200px; */
-}
-
-.yellow {
-  width: 259px;
-  height: 194px;
-  margin-bottom: 11px;
-  /* float: right; */
-}
-
-.orange {
-  width: 259px;
-  height: 194px;
-}
-
-.green {
-  width: 259px;
-  height: 194px;
-  /* float: right; */
-}
-
-.blue {
-  width: 259px;
-  height: 194px;
-  /* float: right; */
-}
-
-.dua .atas {
-  float: right;
-  margin-right: 70px;
-  width: 500px;
-  height: 300px;
-}
-
 .dua .row {
-  /* margin-left: 20px; */
-  /* margin-right: 30px; */
-  justify-content: start;
+  flex-direction: row-reverse;
 }
 
-.dua .yellow {
-  width: 259px;
-  height: 194px;
-  margin-bottom: 11px;
-  /* float: left; */
+.sub-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Space between images */
 }
-
-.dua .orange {
-  width: 259px;
-  height: 194px;
-}
-
-.dua .green {
-  width: 259px;
-  height: 194px;
-  /* float: right; */
-}
-
-.dua .blue {
-  width: 259px;
-  height: 194px;
-  /* float: right; */
-}
-
 
 /*--------------------------------------------------------------
 # Contact
