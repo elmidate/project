@@ -1119,14 +1119,58 @@ section {
 /*--------------------------------------------------------------
 # Galeri
 --------------------------------------------------------------*/
-.dua .row {
-  flex-direction: row-reverse;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main-image {
+  flex: 1;
+  order: 1;
+}
+
+.small-image {
+  flex: 1;
+  order: 2;
+  cursor: pointer;
+}
+
+.fullscreen {
+  padding: 20px 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .sub-image img {
   width: 100%;
   height: auto;
   margin-bottom: 10px; /* Space between images */
+}
+
+.dua .row {
+  flex-direction: row-reverse;
 }
 
 /*--------------------------------------------------------------
