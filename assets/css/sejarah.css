@@ -158,7 +158,9 @@ section {
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
+
   }
+
 
   .navbar ul {
     margin: 0;
@@ -181,7 +183,7 @@ section {
     font-family: var(--font-default);
     font-size: 16px;
     font-weight: 500;
-    color: #fff;
+    color: white;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -193,7 +195,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar a:hover
+  .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
@@ -225,7 +227,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #583214;
+    background: var(--color-white);
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -384,7 +386,7 @@ section {
 
   .mobile-nav-toggle {
     display: inline-block;
-    color: var(--color-secondary);
+    color: #fff;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -419,7 +421,6 @@ section {
     display: block;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Hero
