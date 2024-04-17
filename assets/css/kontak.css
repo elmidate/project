@@ -210,7 +210,6 @@ section {
     padding: 0;
   }
 
-
   .navbar ul {
     margin: 0;
     padding: 0;
@@ -232,7 +231,7 @@ section {
     font-family: var(--font-default);
     font-size: 16px;
     font-weight: 500;
-    color: white;
+    color: #fff;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -244,7 +243,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar a:hover,
+  .navbar a:hover
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
@@ -276,7 +275,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: var(--color-white);
+    background: #583214;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -336,6 +335,35 @@ section {
 .mobile-nav-toggle {
   display: none;
 }
+
+/*--------------------------------------------------------------
+# Button sign 
+--------------------------------------------------------------*/
+
+.button-nav {
+    border: 2px solid #57381F; /* Menambahkan border solid dengan warna yang ditentukan */
+    border-radius: 30px; /* Menentukan radius sudut */
+    background-color: #57381F; /* Warna latar belakang */
+    color: #FFF; /* Warna teks */
+    padding: 8px 16px; /* Padding di dalam tombol */
+    text-align: center; /* Posisi teks ke tengah */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: inline-block; /* Agar tombol tidak menempati ruang yang lebar */
+    font-size: 14px; /* Ukuran teks yang dikurangi */
+    margin: -100px; /* Menambahkan jarak di sekitar tombol */
+    cursor: pointer; /* Mengubah kursor saat dihover ke pointer */
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
+     font-family: var(--font-primary);
+}
+
+
+/* Efek hover */
+.button-nav:hover {
+    background-color: #000; /* Ubah warna latar belakang saat tombol dihover */
+    color: #FFF; /* Ubah warna teks saat tombol dihover */
+    font-family: var(--font-primary);
+}
+
 
 /*--------------------------------------------------------------
 # Mobile Navigation
@@ -441,6 +469,7 @@ section {
     display: block;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Posts
